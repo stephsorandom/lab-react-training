@@ -10,10 +10,14 @@ import React from 'react';
 // b: A number between 0 and 255 representing the amount of blue
 
 
+
 function BoxColor(props) {
+    let myStyle = {
+        backgroundColor:`rgb(${props.r}, ${props.g}, ${props.b})`
+    }
     return (
         <div>
-            <div className="boxColors">
+            <div style={myStyle}>
            <p>rgb {props.r} {props.g} {props.b}</p>  
             </div>
         </div>
