@@ -14,7 +14,7 @@ function translate(lang) {
 function Greetings (props) {
     return (
         <div>
-        {translate(props.lang)} {props.name};
+     {translate(props.lang)} {props.word}
         </div>
     );
 }

@@ -4,11 +4,16 @@ import React from 'react';
 //min: A number
 //max: A number
 
-// function Random(props) {
-//     return(
-//         Random value between {props.min} and {props.max};
-//     );
-// }
+function Random(props) {
+    return(
+    <div>
+       <div>
+           <p>Random value between {props.min} and {props.max} => {Math.floor(Math.random(props.min, props.max)* props.max)} </p>
+        </div>
+
+    </div>
+    );
+}
 
 
-// export default Random;
+export default Random;
